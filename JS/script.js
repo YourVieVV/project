@@ -1,21 +1,20 @@
 "use strict";
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+let number = 50;
 
-const personalMOvieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    generes: [],
-    private: false
-};
+(number == 10) ? console.log('first') : (number == 20) ? console.log('two') : console.log('last');
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
-
-personalMOvieDB.movies[a] = b;
-personalMOvieDB.movies[c] = d;
-
-console.log(personalMOvieDB);
+switch (number) {
+    case 49: 
+        console.log('Неверно');
+        break;
+    case 100: 
+        console.log('Неверно');
+        break;
+    case 50: 
+        console.log('Верно');
+        break;
+    default: 
+        console.log('Ничего');
+        break;
+}
