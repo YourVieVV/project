@@ -1,20 +1,24 @@
 "use strict";
 
-let number = 50;
+let num = 50;
 
-(number == 10) ? console.log('first') : (number == 20) ? console.log('two') : console.log('last');
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
 
-switch (number) {
-    case 49: 
-        console.log('Неверно');
-        break;
-    case 100: 
-        console.log('Неверно');
-        break;
-    case 50: 
-        console.log('Верно');
-        break;
-    default: 
-        console.log('Ничего');
-        break;
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 55);
+
+for (let i = 1; i < 10; i++) {
+    if (i == 6) {
+        continue;
+    }
+
+    console.log(i);
+    
+    
 }
